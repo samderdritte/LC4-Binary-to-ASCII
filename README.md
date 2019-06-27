@@ -1,4 +1,4 @@
-# LC4-Binary-to-ASCII
+# LC4 Binary to ASCII
 
 ## Description
 
