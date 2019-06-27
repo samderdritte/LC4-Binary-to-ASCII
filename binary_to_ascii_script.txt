@@ -1,0 +1,25 @@
+##########################################################
+#  file name   : binary_to_ascii_script.txt              #
+#  author      : Samuel Spycher                          #
+#  description : PennSim script file to load a string    #
+#                from console and store length of string #
+##########################################################
+
+# clear the PennSim screen
+clear
+
+# reset PennSim Simulator (clears all memory/regs)
+reset
+
+# assemble user_string2.asm file into user_string.obj file
+as binary_to_ascii binary_to_ascii
+
+# load user_string2.obj into USER program memory
+ld binary_to_ascii
+
+# set PC to 0
+set PC 0
+
+# once the PC = this label, it will stop the LC4
+break set END
+
